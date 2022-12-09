@@ -13,11 +13,13 @@ int main(void)
 	num = '0';
 	while (num <= '9')
 	{
-		putchar(num)
+	
+		putchar(num);
 		num = num + 1;
 	}
 
 	az = 'a';
+
 
 	while (az <= 'f')
 	{
