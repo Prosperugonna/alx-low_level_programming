@@ -7,15 +7,19 @@
  */
 int main(void)
 {
-	int i;
-	int sum = 0;
+	int i = 1;
+	int total = 0;
 
-	for (i = 3; i < 1024; ++i)
+	while (i < 1024)
 	{
-		if (i % 3 == 0 || i % 5 == 0)
-			sum += i;
+		if (i % 3 == 0)
+			total += i;
+		else if (i % 5 == 0)
+			total += i;
+
+		i++;
 	}
-	printf("%d\n", sum);
+	printf("%d\n", total);
 
 	return (0);
 }
