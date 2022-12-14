@@ -7,17 +7,15 @@
  */
 int main(void)
 {
-	int multi = 0;
-	int res = 0;
+	int i;
+	int sum = 0;
 
-	while (multi < 1024)
+	for (i = 3; i < 1024; ++i)
 	{
-		if (multi % 3 == 0 || multi % 5 == 0)
-		{
-			res += multi;
-		}
-		multi += 1;
+		if (i % 3 == 0 || i % 5 == 0)
+			sum += i;
 	}
-	printf("%d\n", res);
+	printf("%d\n", sum);
+
 	return (0);
 }
