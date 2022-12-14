@@ -1,28 +1,27 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * main - something
  * Return: something
  */
 int main(void)
-
 {
-	long int i, j, k, l;
+	int i;
+	long int a = 1;
+	long int b = 2;
 
-	j = 1;
-	k = 2;
-
-	for (i = 1; i <= 50; ++i)
+	for (i = 0; i < 50; ++i)
 	{
-		if (j != 20365011074)
+		printf("%ld", a);
+		if (i < 49)
 		{
-			printf("%ld\n", j);
+			b += a;
+			a = b - a;
+			printf(", ");
 		}
-		l = j + k;
-		j = k;
-		k = l;
 	}
+
+	putchar('\n');
 
 	return (0);
 }
