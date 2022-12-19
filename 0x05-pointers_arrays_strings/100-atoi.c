@@ -1,12 +1,11 @@
 #include "main.h"
-#include <stdio.h> 
+#include <stdio.h>
 
 /**
- * _atoi - function that convert a string to an integer
+ *_atoi - function that convert a string to an integer
  * @s: string to convert
  * Return: int
  */
-
 int _atoi(char *s)
 {
 	int i = 0;
@@ -30,7 +29,6 @@ int _atoi(char *s)
 			stop_sign = 1;
 			ent_num = 1;
 			j++;
-
 		}
 		else
 		{
@@ -42,7 +40,7 @@ int _atoi(char *s)
 				number_in_array[1] = '\0';
 			}
 		}
-	i++;
+		i++;
 	}
 	printf("sign: %d", sign);
 	while (number_in_array[k] != '\0')
