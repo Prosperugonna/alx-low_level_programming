@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h> 
 
 /**
  * _atoi - function that convert a string to an integer
@@ -9,27 +10,45 @@
 int _atoi(char *s)
 {
 	int i = 0;
-	int n = 0;
-	int signo = 1;
+	int j = 0;
+	int k = 0;
+	int sign = 1;
+	int stop_sign = 0;
+	int stop_num = 0;
+	int ent_num = 0;
+	char number_in_array[100];
 
-	while ((s[i] < '0' || s[i] > '9') && s[i] != 0)
+	while (*(s + i) != '\0')
 	{
-		if (s[i] == '-')
-			signo *= -1;
-		i++;
-	}
-	while ((s[i] >= '0' && s[i] <= '9') && s[i] != 0)
-	{
-		if (n >= 0)
+		if (*(s + i) == '+' && stop_sign == 0)
+			sign *= 1;
+		else if (*(s + i) == '-' && stop_sign == 0)
+			sign *= -1;
+		if (*(s + i) >= '0' && *(s + i) <= '9' && stop_num == 0)
 		{
-			i++;
+			number_in_array[j] = (*(s + i) - 48);
+			stop_sign = 1;
+			ent_num = 1;
+			j++;
+
 		}
 		else
 		{
-			n = n * 10 - (s[i] - '0');
-			i++;
+			if (ent_num == 1)
+				stop_num = 1;
+			else
+			{
+				number_in_array[j] = '0';
+				number_in_array[1] = '\0';
+			}
 		}
+	i++;
 	}
-	signo *= -1;
-	return (n * signo);
+	printf("sign: %d", sign);
+	while (number_in_array[k] != '\0')
+	{
+		putchar(number_in_array[k]);
+		k++;
+	}
+	return (0);
 }
