@@ -6,7 +6,7 @@
  *
  * Return: Always 0.
  */
-char *strcat(char *dest, const char *src)
+char *_strcat(char *dest, char *src) 
 {
 	int i = 0, j = 0;
 
