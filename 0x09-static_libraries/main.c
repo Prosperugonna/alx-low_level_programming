@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * main - check the code
  *
@@ -6,6 +7,6 @@
  */
 int main(void)
 {
-	_puts("\"At the end of the day i am a hacker\"\n\t- Kevin Mitnick");
+	_puts("\"At the end of the day, i am a hacker\"\n\t- Kevin Mitnick");
 	return (0);
 }
