@@ -1,6 +1,4 @@
-/*
- * File: 4-new_dog.c
- * Auth: Brennan D Baraban
+uth: Brennan D Baraban
  */
 
 #include "dog.h"
