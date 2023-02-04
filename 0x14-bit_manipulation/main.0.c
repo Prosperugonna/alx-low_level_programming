@@ -56,7 +56,7 @@ printf("Congratulations!\n");
 }
 else
 {
-printf("ko\n");
+printf("Hol\n");
 return (1);
 }
 return (0);
