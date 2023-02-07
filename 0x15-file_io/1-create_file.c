@@ -1,4 +1,11 @@
 #include "main.h"
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <stdio.h>
+#include <stddef.h>
 
 /**
  * create_file - Creates a file.
@@ -8,6 +15,7 @@
  * Return: If the function fails - -1.
  * Otherwise - 1.
  */
+
 int create_file(const char *filename, char *text_content)
 {
 int o, w, len = 0;
