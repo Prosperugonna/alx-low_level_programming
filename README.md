@@ -7,7 +7,6 @@ Thank you For Checking My Project
 * [About](#about)
 * [Requirements](#requirements)
 * [Table of content](##Project)
-* [Author](#Author)
 
 # About
 This repository contains programs written for the low-level programming and algorithm track at Holberton School. In these projects, which occurred throughout 
